@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./app.css">
+        <script src="https://kit.fontawesome.com/fab13defb9.js"></script>
         <script src="./app.js"></script>
     </head>
     <body>
@@ -17,6 +18,35 @@
             </header>
             <section class="converter">
                 <div class="screen">
+                    <form id="screen-form">
+                        <div class="select-container">
+                            <select name="countries-to">
+                                <option value="usd">flag usd</option>
+                            </select>
+                        </div>
+                        <div class="digit-box">
+                            61,500
+                        </div>
+                        <div class="divider"></div>
+                        <div class="select-container">
+                            <select name="countries-from">
+                                <option value="nga">flag nigeria</option>
+                            </select>
+                        </div>
+                        <div class="digit-box">
+                            34,000,500
+                        </div>
+                    </form>
+                    <div id="screen-infobox">
+                        <div class="rate-div">
+                            <i class="fas fa-balance-scale"></i>
+                            <span data-rate>£430/$</span>
+                        </div>
+                        <div class="last-update-div">
+                            <i class="fas fa-sync-alt"></i>
+                            <span data-last-update>40 mins ago</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="buttons">
                     <div class="button-container">
@@ -53,7 +83,7 @@
                         <button data-button="0">0</button>
                     </div>
                     <div class="button-container">
-                        <button data-button="10"><</button>
+                        <button data-button="10"><i class="fas fa-backspace"></i></button>
                     </div>
                 </div>
             </section>

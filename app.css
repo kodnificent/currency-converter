@@ -67,6 +67,38 @@ main {
     width: 100%;
     box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.4);
     z-index: 1;
+    padding: 0.65rem 1rem;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.converter .screen #screen-form {
+    height: 80%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.converter .screen #screen-form .select-container {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.converter .screen #screen-form .digit-box {
+    width: 60%;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.converter .screen #screen-infobox {
+    height: 20%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
 .converter .buttons {
