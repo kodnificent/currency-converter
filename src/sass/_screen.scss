@@ -12,17 +12,24 @@
         display: flex;
         flex-flow: row wrap;
         .select-container {
+            height: 48%;
             width: $screen-left-width;
             display: flex;
             align-items: center;
             justify-content: flex-start;
         }
         .digit-box {
+            height: 48%;
             width: $screen-right-width;
             font-size: $digit-font-size;
             display: flex;
             align-items: center;
             justify-content: flex-end;
+        }
+        .divider {
+            width: 100%;
+            height: 1px;
+            background: #eee;
         }
     }
     #screen-infobox {
@@ -31,5 +38,11 @@
         flex-flow: row wrap;
         align-items: flex-end;
         justify-content: space-between;
+        .rate-div .fas, .last-update-div .fas {
+            margin-right: 0.3rem;
+        }
+        .rate-div [data-rate], .last-update-div [data-last-update]{
+            color: $text-muted;
+        }
     }
 }

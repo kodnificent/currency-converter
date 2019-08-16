@@ -9,6 +9,7 @@ $dark:                          #212121 !default;
 $primary-text:                  #FFFFFF !default;
 $light-primary-text:            #212121 !default;
 $dark-primary-text:             #FFFFFF !default;
+$text-muted:                    #999999 !default;
 
 //font
 $font-family:                   'Montserrat', sans-serif !default;
@@ -51,8 +52,6 @@ $theme-color: (
     'light-primary':            $light-primary,
     'dark-primary':             $dark-primary,
     'primary-50':               $primary-50,
-    'white':                    $white,
-    'grey':                     $grey,
     'dark':                     $dark,
     'primary-text':             $primary-text,
     'light-primary-text':       $light-primary-text,
