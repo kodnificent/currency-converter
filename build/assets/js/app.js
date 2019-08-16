@@ -1,0 +1,12 @@
+"use strict";
+
+var selectJs = function selectJs() {
+  var barca = 'yellow';
+  var bilbao = 'red';
+  var result = barca + bilbao;
+  return result;
+};
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNlbGVjdC5qcyJdLCJuYW1lcyI6WyJzZWxlY3RKcyIsImJhcmNhIiwiYmlsYmFvIiwicmVzdWx0Il0sIm1hcHBpbmdzIjoiOztBQUFBLElBQU1BLFFBQVEsR0FBRyxTQUFYQSxRQUFXLEdBQUk7QUFDakIsTUFBSUMsS0FBSyxHQUFFLFFBQVg7QUFDQSxNQUFJQyxNQUFNLEdBQUcsS0FBYjtBQUNBLE1BQUlDLE1BQU0sR0FBR0YsS0FBSyxHQUFHQyxNQUFyQjtBQUNBLFNBQU9DLE1BQVA7QUFDSCxDQUxEIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3Qgc2VsZWN0SnMgPSAoKT0+e1xyXG4gICAgdmFyIGJhcmNhPSAneWVsbG93JztcclxuICAgIHZhciBiaWxiYW8gPSAncmVkJztcclxuICAgIHZhciByZXN1bHQgPSBiYXJjYSArIGJpbGJhbztcclxuICAgIHJldHVybiByZXN1bHQ7XHJcbn0iXSwiZmlsZSI6InNlbGVjdC5qcyJ9
+
+"use strict";
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZXNDb250ZW50IjpbXSwiZmlsZSI6ImFwcC5qcyJ9

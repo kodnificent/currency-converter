@@ -1,0 +1,73 @@
+//colors
+$primary:                       #03A9F4 !default;
+$light-primary:                 #B3E5FC !default;
+$dark-primary:                  #0288D1 !default;
+$primary-50:                    #E1F5FE !default;
+$white:                         #FFFFFF !default;
+$grey:                          #BDBDBD !default;
+$dark:                          #212121 !default;
+$primary-text:                  #FFFFFF !default;
+$light-primary-text:            #212121 !default;
+$dark-primary-text:             #FFFFFF !default;
+
+//font
+$font-family:                   'Montserrat', sans-serif !default;
+
+// breakpoints
+$mobile:                        576px !default;
+$laptop:                        768px !default;
+$desktop:                       992px !default;
+$landscape-height:              360px !default;
+
+$main-bg:                       $light-primary !default;
+
+//screen variables
+$screen-bg:                     $white !default;
+$screen-height:                 35% !default;
+$screen-width:                  100% !default;
+$screen-padding:                0.65rem 1rem !default;
+$screen-box-shadow:             0px 2px 15px 0px rgba(0,0,0,0.4) !default;
+$screen-left-width:             40% !default;
+$screen-right-width:            60% !default; //element that stays at the right of the screen. i.e digit box in this case
+$screen-top-height:             80% !default;
+$screen-bottom-height:          20% !default; // element that stays at the bottom of the screen. i.e info box in this case
+$digit-font-size:               24px !default;
+
+//control variables
+$controls-bg:                   $primary-50 !default;
+$controls-height:               100% - $screen-height !default;
+$controls-width:                100% !default;
+$controls-width-landscape:      50% !default;
+$controls-padding:              1.5rem !default;
+$controls-padding-landscape:    0.25rem 1.5rem !default;
+$control-btn-bg:                $white !default;
+$control-btn-color:             $dark !default;
+$control-btn-box-shadow:        1px 2px 2px 0px rgba(0,0,0,0.4) !default;
+$control-btn-active-bg:         $light-primary !default;
+$control-btn-active-color:      $light-primary-text !default;
+
+$theme-color: (
+    'primary':                  $primary,
+    'light-primary':            $light-primary,
+    'dark-primary':             $dark-primary,
+    'primary-50':               $primary-50,
+    'white':                    $white,
+    'grey':                     $grey,
+    'dark':                     $dark,
+    'primary-text':             $primary-text,
+    'light-primary-text':       $light-primary-text,
+    'dark-primary-text':        $dark-primary-text,
+) !default;
+
+//@TODO: $night-theme
+
+$theme: (
+    'main-bg':                  $main-bg,
+    'screen-bg':                $screen-bg,
+    'controls-bg':              $controls-bg,
+    'control-btn-bg':           $control-btn-bg,
+    'control-btn-color':        $control-btn-color,
+    'control-btn-box-shadow':   $control-btn-box-shadow,
+    'control-btn-active-bg':    $control-btn-active-bg,
+    'control-btn-active-color': $control-btn-active-color,
+) !default;

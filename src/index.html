@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Currency Converter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/app.css">
+    </head>
+    <body>
+        <main>
+            <header class="sidebar">
+                <nav>
+
+                </nav>
+            </header>
+            <section class="converter">
+                <div class="screen">
+                    <form id="screen-form">
+                        <div class="select-container">
+                            <select name="countries-to">
+                                <option value="usd">flag usd</option>
+                            </select>
+                        </div>
+                        <div class="digit-box">
+                            61,500
+                        </div>
+                        <div class="divider"></div>
+                        <div class="select-container">
+                            <select name="countries-from">
+                                <option value="nga">flag nigeria</option>
+                            </select>
+                        </div>
+                        <div class="digit-box">
+                            34,000,500
+                        </div>
+                    </form>
+                    <div id="screen-infobox">
+                        <div class="rate-div">
+                            <i class="fas fa-balance-scale"></i>
+                            <span data-rate>£430/$</span>
+                        </div>
+                        <div class="last-update-div">
+                            <i class="fas fa-sync-alt"></i>
+                            <span data-last-update>40 mins ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <div class="button-container">
+                        <button data-button="7">7</button>
+                    </div>
+                    <div class="button-container">
+                        <button data-button="8">8</button>
+                    </div>
+                    <div class="button-container">
+                        <button data-button="9">9</button>
+                    </div>
+                    <div class="button-container">
+                        <button data-button="4">4</button>
+                    </div>
+                    <div class="button-container">
+                        <button data-button="7">5</button>
+                    </div>
+                    <div class="button-container">
+                        <button data-button="6">6</button>
+                    </div>
+                    <div class="button-container">
+                        <button data-button="1">1</button>
+                    </div>
+                    <div class="button-container">
+                        <button data-button="2">2</button>
+                    </div>
+                    <div class="button-container">
+                        <button data-button="3">3</button>
+                    </div>
+                    <div class="button-container">
+                        <button data-button=".">.</button>
+                    </div>
+                    <div class="button-container">
+                        <button data-button="0">0</button>
+                    </div>
+                    <div class="button-container">
+                        <button data-button="10"><i class="fas fa-backspace"></i></button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <script src="https://kit.fontawesome.com/fab13defb9.js"></script>
+        <!-- build:js(build) ./assets/js/app.js -->
+        <script src="./assets/js/select.js"></script>
+        <script src="./assets/js/app.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

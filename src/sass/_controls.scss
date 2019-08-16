@@ -1,0 +1,50 @@
+.controls {
+    height: $controls-height;
+    width: $controls-width;
+    background: var(--controls-bg);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: $controls-padding;
+    @media (max-height: $landscape-height) {
+        width: 50%;
+        padding: 0.25rem 1.5rem;
+    }
+    .button-container {
+        width: calc(100% / 3);
+        height: calc(100% / 4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            border-radius: 100%;
+            width: 70px;
+            height: 70px;
+            font-size: 24px;
+            background: var(--control-btn-bg);
+            color: var(--control-btn-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-style: none;
+            box-shadow: var(--control-btn-box-shadow);
+            z-index: 1;
+            cursor: pointer;
+            &:focus {
+                outline: none;
+            }
+            &:active {
+                outline: none;
+                background: var(--control-btn-active-bg);
+                color: var(--control-btn-active-color);
+                transition: background,color ease-in-out 200ms;
+            }
+            @media (max-height: $landscape-height) {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
+        }
+    }
+}

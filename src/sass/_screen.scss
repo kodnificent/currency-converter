@@ -1,0 +1,35 @@
+.screen {
+    background: var(--screen-bg);
+    height: $screen-height;
+    width: $screen-width;
+    box-shadow: $screen-box-shadow;
+    z-index: 1;
+    padding: $screen-padding;
+    display: flex;
+    flex-flow: column wrap;
+    #screen-form {
+        height: $screen-top-height;
+        display: flex;
+        flex-flow: row wrap;
+        .select-container {
+            width: $screen-left-width;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .digit-box {
+            width: $screen-right-width;
+            font-size: $digit-font-size;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+    #screen-infobox {
+        height: $screen-bottom-height;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+}
