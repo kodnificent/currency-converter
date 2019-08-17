@@ -25,6 +25,16 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
+            input[name=amount]{
+                text-align: right;
+                font-size: inherit;
+                font-family: inherit;
+                border: none;
+                width: 100%;
+                &:focus {
+                    outline: none;
+                }
+            }
         }
         .divider {
             width: 100%;
@@ -43,6 +53,12 @@
         }
         .rate-div [data-rate], .last-update-div [data-last-update]{
             color: $text-muted;
+        }
+        .rate-div .fas {
+            color: #00695c;
+        }
+        .last-update-div .fas {
+            color: var(--dark-primary)
         }
     }
 }

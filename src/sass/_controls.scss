@@ -12,15 +12,15 @@
         padding: 0.25rem 1.5rem;
     }
     .button-container {
-        width: calc(100% / 3);
+        width: calc(100% / 4);
         height: calc(100% / 4);
         display: flex;
         justify-content: center;
         align-items: center;
-        button {
+        [data-button] {
             border-radius: 100%;
-            width: 70px;
-            height: 70px;
+            width: 65px;
+            height: 65px;
             font-size: 24px;
             background: var(--control-btn-bg);
             color: var(--control-btn-color);
@@ -45,6 +45,22 @@
                 height: 40px;
                 font-size: 18px;
             }
+        }
+        [data-button=backspace] {
+            color: $text-muted;
+        }
+        [data-button=menu] {
+            background: var(--primary);
+            color: var(--primary-text);
+        }
+        [data-button=share] {
+            color: #558b2f;
+        }
+        [data-button=swap] {
+            color: #ff8f00;
+        }
+        [data-button=clear] {
+            color: #c62828;
         }
     }
 }
