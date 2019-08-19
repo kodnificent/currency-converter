@@ -7,6 +7,7 @@ $white:                         #FFFFFF !default;
 $grey:                          #BDBDBD !default;
 $dark:                          #212121 !default;
 $primary-text:                  #FFFFFF !default;
+$primary-50-text:               #212121 !default;
 $light-primary-text:            #212121 !default;
 $dark-primary-text:             #FFFFFF !default;
 $text-muted:                    #999999 !default;
@@ -32,7 +33,7 @@ $screen-left-width:             40% !default;
 $screen-right-width:            60% !default; //element that stays at the right of the screen. i.e digit box in this case
 $screen-top-height:             80% !default;
 $screen-bottom-height:          20% !default; // element that stays at the bottom of the screen. i.e info box in this case
-$digit-font-size:               24px !default;
+$digit-font-size:               22px !default;
 
 //control variables
 $controls-bg:                   $primary-50 !default;
@@ -47,6 +48,26 @@ $control-btn-box-shadow:        1px 2px 2px 0px rgba(0,0,0,0.4) !default;
 $control-btn-active-bg:         $light-primary !default;
 $control-btn-active-color:      $light-primary-text !default;
 
+//selectjs
+$current-option-bg: $white !default;
+$current-option-color: $dark !default;
+$current-option-padding: 0.2rem 0.5rem !default;
+$custom-select-bg: $white !default;
+$custom-select-color: $dark !default;
+$custom-select-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.4), -1px -1px 2px 0px rgba(0,0,0,0.4) !default;
+$custom-select-border-color: #eeeeee !default;
+$custom-select-zindex: 1030 !default;
+$custom-option-bg: $current-option-bg !default;
+$custom-option-color: $current-option-color !default;
+$custom-option-padding: 0.5rem 0.5rem !default;
+$custom-option-hover-bg: $primary !default;
+$custom-option-hover-color: $primary-text !default;
+$custom-option-active-bg: $primary-50 !default;
+$custom-option-active-color: $primary-50-text !default;
+$option-image-width: 50px !default;
+$option-image-height: 30px !default;
+$option-data-text-case: uppercase !default;
+
 $theme-color: (
     'primary':                  $primary,
     'light-primary':            $light-primary,
@@ -54,6 +75,7 @@ $theme-color: (
     'primary-50':               $primary-50,
     'dark':                     $dark,
     'primary-text':             $primary-text,
+    'primary-50-text':          $primary-50-text,
     'light-primary-text':       $light-primary-text,
     'dark-primary-text':        $dark-primary-text,
 ) !default;

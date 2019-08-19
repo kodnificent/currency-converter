@@ -1,0 +1,68 @@
+.select-js {
+    position: relative;
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    width: 100%;
+    select {
+        display: none;
+    }
+    .custom-select {
+        position: absolute;
+        min-width: 250px;
+        top: 120%;
+        z-index: $custom-select-zindex;
+        list-style: none;
+        background: $custom-select-bg;
+        color: $custom-select-color;
+        //border: 1px solid $custom-select-border-color;
+        box-shadow: $custom-select-box-shadow;
+        transform: scale(0);
+        transition: transform ease-in-out 200ms;
+        .custom-option {
+            background: $custom-option-bg;
+            color: $custom-option-color;
+            padding: $custom-option-padding;
+            &:not(:last-child){
+                border-bottom: 1px solid $custom-select-border-color;
+            }
+            &:hover, &:focus, &[data-selected=true] {
+                background: $custom-option-hover-bg;
+                color: $custom-option-hover-color;
+            }
+            &:active {
+                background: $custom-option-active-bg;
+                color: $custom-option-active-color;
+            }
+        }
+        &[data-open=true] {
+            transform: scale(1);
+        }
+    }
+    .current-option {
+        background: $current-option-bg;
+        color: $current-option-color;
+        padding: $current-option-padding;
+        //border: 1px solid grey;
+        .option-image {
+            box-shadow: 2px 2px 5px 0px rgba(0,0,0, 0.4);
+        }
+    }
+    .current-option, .custom-option {
+        transition: all ease-in-out 200ms;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+        .option-image {
+            width: $option-image-width;
+            height: $option-image-height;
+        }
+        .option-data {
+            width: auto;
+            margin-left: 0.5rem;
+            text-transform: $option-data-text-case;
+        }
+    }
+}

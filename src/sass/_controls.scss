@@ -17,6 +17,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
         [data-button] {
             border-radius: 100%;
             width: 65px;
@@ -29,8 +30,11 @@
             align-items: center;
             border-style: none;
             box-shadow: var(--control-btn-box-shadow);
-            z-index: 1;
-            cursor: pointer;
+            // onclick button is not round in chrome on mobile
+            @media (min-width: $laptop){
+                cursor: pointer;
+            }
+            appearance: none;
             &:focus {
                 outline: none;
             }
