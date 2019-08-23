@@ -10,6 +10,8 @@
     .custom-select {
         position: absolute;
         min-width: 250px;
+        max-height: 350px;
+        overflow-y: auto;
         top: 120%;
         z-index: $custom-select-zindex;
         list-style: none;

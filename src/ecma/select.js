@@ -1,10 +1,9 @@
 class Selectjs {
     constructor(){
         this.selectDivs = document.querySelectorAll('.select-js');
-
+        if(!this.selectDivs) return;
         this.selectDivs.forEach(el=>{
-            let nativeSelect = document.querySelector('select');
-            this.updateCustomSelect(el, nativeSelect);
+            this.updateCustomSelect(el);
             
             // add click event to toggle select
             let cOption = el.querySelector('.current-option');
@@ -33,10 +32,12 @@ class Selectjs {
     /**
      * Update the custom select with data from the native select element
      * @param {Element} el  the target div element
-     * @param {Element} sel the native select element
      */
-    updateCustomSelect(el, sel){
-        let cOption, cOptionImage, cOptionData, selected, ul;
+    updateCustomSelect(el){
+        let cOption, cOptionImage, cOptionData, selected, ul, sel;
+        
+        sel = el.querySelector('select');
+        if(!sel) return;
 
         selected = sel[sel.selectedIndex];
 
@@ -87,11 +88,16 @@ class Selectjs {
 
             ul.appendChild(li);
         });
+
         //@TODO perform keyboard filter search
         //document.onkeydown = e=>{
         //}
 
         el.appendChild(ul);
+
+        // scroll to selected option
+        let li = ul.querySelector('[data-selected=true]');
+        ul.scroll(0, li.offsetTop);
     }
 
     /**

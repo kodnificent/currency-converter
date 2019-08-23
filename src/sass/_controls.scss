@@ -49,6 +49,10 @@
                 height: 40px;
                 font-size: 18px;
             }
+            &[disabled]{
+                background: #fffefe !important;
+                color: #eee !important;
+            }
         }
         [data-button=backspace] {
             color: $text-muted;
