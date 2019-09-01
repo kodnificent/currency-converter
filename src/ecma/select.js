@@ -122,7 +122,11 @@ class Selectjs {
         options.forEach(opt=>{
             if(opt.getAttribute('data-id') === id) return;
             opt.setAttribute('data-selected', 'false');
-        })
+        });
+
+        // create a change event for the select element
+        const evt = new Event('change');
+        nativeSelect.dispatchEvent(evt);
     }
     
     toggleSelect(el){
